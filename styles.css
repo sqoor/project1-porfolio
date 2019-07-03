@@ -1,0 +1,41 @@
+* {
+	--main-color: #225b4c;
+}
+
+body {
+	margin: 0
+}
+
+
+header, footer {
+	background-color: var(--main-color);
+	color: white;
+}
+
+header article h1 {
+	margin-top: 0;
+}
+
+section {
+	background-color: #ccc;
+	padding: 4%
+}
+
+
+#grid-container {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 6.5fr 3.5fr;
+}
+
+
+footer {
+	height: 20%;
+	padding: 2%;
+}
+
+footer div{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
