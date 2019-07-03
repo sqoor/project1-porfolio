@@ -2,6 +2,7 @@
 	--main-color: #225b4c;
 }
 
+/*general layout and styling for the whole context*/
 body {
 	margin: 0
 }
@@ -39,3 +40,29 @@ footer div{
 	flex-wrap: nowrap;
 	justify-content: space-around;
 }
+
+
+/*layout for header */
+header {
+	display: grid;
+	grid-template-columns: 6.5fr 3.5fr;
+	justify-content: space-between;
+}
+
+/*header article #info*/
+
+header article p{
+	width: 60%;
+}
+header h1, p {
+	overflow:  break-word
+}
+
+
+header article img {
+	position: relative;
+	top: 10%;
+	right: 10%;
+	border: solid 10px #225b4c;
+}
+
