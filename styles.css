@@ -27,6 +27,8 @@ section {
 	display: grid;
 	grid-gap: 10px;
 	grid-template-columns: 6.5fr 3.5fr;
+
+	padding-top: 50px;
 }
 
 
@@ -51,18 +53,35 @@ header {
 
 /*header article #info*/
 
-header article p{
-	width: 60%;
-}
 header h1, p {
 	overflow:  break-word
 }
 
-
-header article img {
-	position: relative;
-	top: 10%;
-	right: 10%;
-	border: solid 10px #225b4c;
+header article#info {
+	padding-top: 50px;
+	padding-left: 50px;
 }
 
+header article#info p{
+	width: 60%;
+}
+
+header article#personal-image img {
+	position: relative;
+	top: 10%;
+	border: solid 10px #225b4c;
+    width: 50%;
+}
+
+
+/*layout of sections */
+
+div#experience {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-gap: 10px;
+}
+
+section#skills {
+	display: grid;
+}
