@@ -85,3 +85,14 @@ div#experience {
 section#skills {
 	display: grid;
 }
+
+div#education {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-gap: 10px;
+}
+
+section#award {
+	display: grid;
+	align-items: space-around;
+}
