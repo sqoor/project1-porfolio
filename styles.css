@@ -1,5 +1,6 @@
 * {
-	--main-color: #225b4c;
+	/* --main-color: #225b4c; */
+	--main-color: #33190d;;
 }
 
 /*general layout and styling for the whole context*/
@@ -10,7 +11,7 @@ body {
 
 
 header, footer {
-	background-color: var(--main-color);
+	background-image: url('https://cdn.pixabay.com/photo/2017/01/12/16/15/banner-1975070_960_720.jpg');
 	color: white;
 }
 
@@ -71,7 +72,7 @@ header article#info p{
 header article#personal-image img {
 	position: relative;
 	top: 15%;
-	border: solid 10px #225b4c;
+	border: solid 10px var(--main-color);
     width: 70%;
 }
 
@@ -171,4 +172,22 @@ section {
 
 #language progress {
 	width: 130px
+}
+
+
+html {
+	font-size: 10px;
+	font-family: 'Times New Roman', Times, serif
+}
+@media screen and (min-width: 320px) {
+	html {
+		font-size: calc(10px + 6 * ((100vw - 320px) / 680));
+		font-family: 'Times New Roman', Times, serif
+	}
+}
+@media screen and (min-width: 1000px) {
+	html {
+		font-size: 15px;
+		font-family: 'Times New Roman', Times, serif
+	}
 }
