@@ -4,7 +4,8 @@
 
 /*general layout and styling for the whole context*/
 body {
-	margin: 0
+	width: 70%;
+	margin: 0 auto;
 }
 
 
@@ -18,17 +19,18 @@ header article h1 {
 }
 
 section {
-	background-color: #ccc;
-	padding: 4%
+	/* background-color: #ccc; */
+	padding: 4%;
+	position: relative;
 }
 
 
 #grid-container {
 	display: grid;
-	grid-gap: 10px;
+	grid-gap: 100px;
 	grid-template-columns: 6.5fr 3.5fr;
 
-	padding-top: 50px;
+	margin-top: 9%;
 }
 
 
@@ -68,9 +70,9 @@ header article#info p{
 
 header article#personal-image img {
 	position: relative;
-	top: 10%;
+	top: 15%;
 	border: solid 10px #225b4c;
-    width: 50%;
+    width: 70%;
 }
 
 
@@ -105,4 +107,68 @@ ul#intrest {
 div#language {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+}
+
+
+/* font sizing  */
+/* h1 {
+	font-size: 5vw;
+}
+
+h2 {
+	font-size: 3.5vw;
+}
+
+h3 {
+	font-size: 3vw;
+}
+
+p, li {
+	font-size: 2vw;
+} */
+
+@media screen and (min-width:1200px) {
+    body { font-size:110%; } 
+}
+@media screen and (min-width:1400px) {
+    html { padding:0 15%; } 
+}
+@media screen and (min-width:1600px) {
+    body { font-size:125%; } 
+}
+@media screen and (min-width:1800px) {
+    html { padding:0 20%; } 
+}
+
+
+
+/* font color */
+section p, li, label {
+	color: #676767;
+	margin: 0;
+}
+
+h3 {
+	color: var(--main-color);
+	margin: 0;
+}
+
+
+
+/* hr  */
+section {
+	border-top: solid 2px var(--main-color);
+}
+
+
+.notch {
+	border: 3px solid var(--main-color);
+    position: absolute;
+    left: 0;
+    width: 30px;
+    top: -8px;
+}
+
+#language progress {
+	width: 130px
 }
