@@ -1,7 +1,17 @@
-* {
+:root {
 	/* --main-color: #225b4c; */
 	--main-color: #33190d;;
 }
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 15px;
+	font-family: 'Times New Roman', Times, serif
+}
+
 
 /*general layout and styling for the whole context*/
 body {
@@ -30,7 +40,6 @@ section {
 	display: grid;
 	grid-gap: 100px;
 	grid-template-columns: 6.5fr 3.5fr;
-
 	margin-top: 9%;
 }
 
@@ -111,36 +120,6 @@ div#language {
 }
 
 
-/* font sizing  */
-/* h1 {
-	font-size: 5vw;
-}
-
-h2 {
-	font-size: 3.5vw;
-}
-
-h3 {
-	font-size: 3vw;
-}
-
-p, li {
-	font-size: 2vw;
-} */
-
-@media screen and (min-width:1200px) {
-    body { font-size:110%; } 
-}
-@media screen and (min-width:1400px) {
-    html { padding:0 15%; } 
-}
-@media screen and (min-width:1600px) {
-    body { font-size:125%; } 
-}
-@media screen and (min-width:1800px) {
-    html { padding:0 20%; } 
-}
-
 
 
 /* font color */
@@ -175,19 +154,14 @@ section {
 }
 
 
-html {
-	font-size: 10px;
-	font-family: 'Times New Roman', Times, serif
-}
-@media screen and (min-width: 320px) {
+
+@media screen and (max-width: 700px) {
 	html {
 		font-size: calc(10px + 6 * ((100vw - 320px) / 680));
 		font-family: 'Times New Roman', Times, serif
 	}
-}
-@media screen and (min-width: 1000px) {
-	html {
-		font-size: 15px;
-		font-family: 'Times New Roman', Times, serif
+
+	#grid-container { 
+		grid-template-columns: 1fr;
 	}
 }
